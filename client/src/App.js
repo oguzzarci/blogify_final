@@ -5,8 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect,
+  Route
 } from "react-router-dom";
 import {
   CssBaseline,
