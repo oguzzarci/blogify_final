@@ -13,3 +13,6 @@ export const updatePost = async (id, updatedPost) =>
 
 export const deletePost = async (id) =>
   await axios.delete(`${apiEndpoint}${id}`);
+
+
+export const login = async (userdata) => await axios.post("/login",userdata);

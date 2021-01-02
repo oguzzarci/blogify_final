@@ -23,6 +23,7 @@ import PenIcon from "@material-ui/icons/Create";
 import PostsList from "./components/PostsList";
 import AddPostForm from "./components/AddPostForm";
 import PostDetails from "./components/PostDetails";
+import LoginPage from "./components/LoginPage";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -76,7 +77,7 @@ const App = () => {
               color="secondary"
               className={classes.title}
             >
-              <a href="http://localhost:3000/posts">Blogify</a>
+              <a href="http://localhost:3000/alberthepug">Blogify</a>
             </Typography>
 
             <Button
@@ -93,10 +94,11 @@ const App = () => {
           <Grid item xs={12}>
             <Router>
               <Switch>
+                <Route exact path="/alberthepug" component={LoginPage}/>
                 <Route exact path="/posts" component={PostsList} />
                 <Route exact path="/posts/:id" component={PostDetails} />
+                <Route exact path="/" component={PostsList} />
               </Switch>
-              <Redirect from="/" to="/posts" />
             </Router>
           </Grid>
         </Grid>

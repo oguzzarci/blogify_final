@@ -97,7 +97,7 @@ const PostDetails = ({ history, location, match }) => {
             {currentPost?.subtitle}
           </Typography>
           <Typography variant="caption" component="p" gutterBottom>
-            {convertRelativeTime(currentPost?.createdAt)} by Didem
+            {convertRelativeTime(currentPost?.createdAt)} by Admin
           </Typography>
           <Chip
             label={`# ${currentPost?.tag}`}
